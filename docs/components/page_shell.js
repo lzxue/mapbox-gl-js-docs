@@ -217,7 +217,7 @@ class PageShell extends React.Component {
                 this.getPluginSections(plugins)
             );
         } else if (activeTab === 'style-spec') {
-            return this.styleSpecNavProps();
+            return this.styleSpecNavProps(); 
         }
     }
 
