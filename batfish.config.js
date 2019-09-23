@@ -40,10 +40,19 @@ module.exports = () => {
             }
         ],
         jsxtremeMarkdownOptions: {
-            wrapper: path.join(
-                __dirname,
-                './docs/components/markdown-page-shell.js'
-            ),
+            getWrapper: resource => {
+              if (/\/style-spec\//.test(resource)) {
+                return path.join(
+                  __dirname,
+                  './docs/components/markdown-mini-shell.js'
+                );
+              } else {
+                return path.join(
+                  __dirname,
+                  './docs/components/markdown-page-shell.js'
+                );
+              }
+            },
             rehypePlugins: [
                 require('@mapbox/dr-ui/plugins/add-links-to-headings'),
                 require('@mapbox/dr-ui/plugins/make-table-scroll')

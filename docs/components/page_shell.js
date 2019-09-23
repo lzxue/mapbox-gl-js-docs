@@ -222,7 +222,7 @@ class PageShell extends React.Component {
     }
 
     render() {
-        const { location } = this.props;
+        const { frontMatter, location } = this.props;
 
         let activeTab = location.pathname.split('/')[2];
         if (activeTab === 'example') activeTab = 'examples';
@@ -233,9 +233,25 @@ class PageShell extends React.Component {
             topNav: <TopNavTabs activeTab={activeTab} />
         };
 
+        const meta = this.props.meta || {};
+        if (!meta.title && frontMatter.title) {
+            meta.title = frontMatter.title;
+        }
+        if (!meta.description && frontMatter.description) {
+            meta.description = frontMatter.description;
+        }
+        if (!meta.pathname) {
+            meta.pathname = location ? location.pathname : frontMatter.pathname;
+            console.log(meta.pathname);
+        }
+        if (frontMatter.contentType) meta.contentType = frontMatter.contentType;
+        if (frontMatter.language) meta.language = frontMatter.language;
+        if (frontMatter.level) meta.level = frontMatter.level;
+
         return (
             <ReactPageShell
                 site={site}
+                meta={meta}
                 darkHeaderText={true}
                 includeFooter={false}
                 {...this.props}
@@ -243,7 +259,7 @@ class PageShell extends React.Component {
                 <Helmet>
                     <link
                         rel="canonical"
-                        href={`https://docs.mapbox.com${this.props.meta.pathname}`}
+                        href={`https://docs.mapbox.com${meta.pathname}`}
                     />
                 </Helmet>
                 <div className="shell-header-buffer" />

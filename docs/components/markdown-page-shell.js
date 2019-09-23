@@ -22,22 +22,8 @@ class MarkdownPageshell extends React.Component {
         });
     }
     render() {
-        const { frontMatter, location } = this.props;
-        const meta = this.props.meta || {};
-        if (!meta.title && frontMatter.title) {
-            meta.title = frontMatter.title;
-        }
-        if (!meta.description && frontMatter.description) {
-            meta.description = frontMatter.description;
-        }
-        if (!meta.pathname) {
-            meta.pathname = location.pathname;
-        }
-        if (frontMatter.contentType) meta.contentType = frontMatter.contentType;
-        if (frontMatter.language) meta.language = frontMatter.language;
-        if (frontMatter.level) meta.level = frontMatter.level;
         return (
-            <PageShell meta={meta} {...this.props}>
+            <PageShell {...this.props}>
                 <div className="prose">{this.props.children}</div>
                 <div className="mt18">
                     <Feedback
