@@ -1,8 +1,8 @@
 ---
 title: Glyphs
 id: glyphs
-description: Glyphs description
-contentType: 'Specification'
+description: A style's glyphs property provides a URL template for loading signed-distance-field glyph sets in PBF format.
+contentType: specification
 prependJs:
     - "import ref from '../../../mapbox-gl-js/src/style-spec/reference/latest';"
 ---

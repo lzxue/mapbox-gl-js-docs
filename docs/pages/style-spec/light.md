@@ -1,8 +1,8 @@
 ---
 title: Light
 id: light
-description: Light description
-contentType: 'Specification'
+description: A style's light property provides global light source for that style.
+contentType: specification
 prependJs:
     - "import InnerSection from '../../components/style-spec/inner-section';"
     - "import Item from '../../components/style-spec/item';"

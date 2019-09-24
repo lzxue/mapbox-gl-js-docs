@@ -1,8 +1,8 @@
 ---
 title: Other
 id: other
-description: Other description
-contentType: 'Specification'
+description: The value for any layout or paint property may be specified as a function.
+contentType: specification
 prependJs:
     - "import SectionH3 from '../../components/style-spec/section-h3';"
     - "import SectionH4 from '../../components/style-spec/section-h4';"

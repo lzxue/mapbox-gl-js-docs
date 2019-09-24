@@ -1,8 +1,8 @@
 ---
 title: Expressions
 id: expressions
-description: Expressions description
-contentType: 'Specification'
+description: An expression defines a formula for computing the value of the property using the operators described in this section.
+contentType: specification
 prependJs:
     - "import slug from 'slugg';"
     - "import SectionH3 from '../../components/style-spec/section-h3';"

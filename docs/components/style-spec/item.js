@@ -1,9 +1,6 @@
 import React from 'react';
 import md from '../md';
-import {
-    highlightJavascript,
-    highlightJSON
-} from '../prism_highlight';
+import { highlightJSON } from '../prism_highlight';
 import entries from 'object.entries';
 import SDKSupportTable from '../sdk_support_table';
 import Icon from '@mapbox/mr-ui/icon';

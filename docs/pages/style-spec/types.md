@@ -1,8 +1,8 @@
 ---
 title: Types
 id: types
-description: Types description
-contentType: 'Specification'
+description: A Mapbox style contains values of various types, most commonly as values for the style properties of a layer.
+contentType: specification
 prependJs:
     - "import SectionH3 from '../../components/style-spec/section-h3';"
 ---

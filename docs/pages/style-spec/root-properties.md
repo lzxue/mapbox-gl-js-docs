@@ -1,8 +1,8 @@
 ---
 title: Root properties
 id: root
-description: Root properties description
-contentType: 'Specification'
+description: Root level properties of a Mapbox style specify the map's layers, tile sources and other resources, and default values for the initial camera position when not specified elsewhere.
+contentType: specification
 prependJs:
     - "import InnerSection from '../../components/style-spec/inner-section';"
     - "import Item from '../../components/style-spec/item';"

@@ -1,8 +1,8 @@
 ---
 title: Layers
 id: layers
-description: Layers description
-contentType: 'Specification'
+description: A style's layers property lists all of the layers available in that style.
+contentType: specification
 prependJs:
     - "import SectionH3 from '../../components/style-spec/section-h3';"
     - "import InnerSection from '../../components/style-spec/inner-section';"

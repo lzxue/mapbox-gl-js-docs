@@ -1,8 +1,8 @@
 ---
 title: Transition
 id: transition
-description: Transition description
-contentType: 'Specification'
+description: A transition property controls timing for the interpolation between a transitionable style property's previous value and new value.
+contentType: specification
 prependJs:
     - "import InnerSection from '../../components/style-spec/inner-section';"
     - "import Item from '../../components/style-spec/item';"

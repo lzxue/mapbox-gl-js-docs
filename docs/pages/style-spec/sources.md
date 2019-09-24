@@ -1,8 +1,8 @@
 ---
 title: Sources
 id: sources
-description: Sources description
-contentType: 'Specification'
+description: Sources supply data to be shown on the map.
+contentType: specification
 prependJs:
     - "import SectionH3 from '../../components/style-spec/section-h3';"
     - "import InnerSection from '../../components/style-spec/inner-section';"

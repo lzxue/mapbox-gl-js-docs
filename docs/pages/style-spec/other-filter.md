@@ -1,8 +1,8 @@
 ---
 title: Other filter
 id: other-filter
-description: Other filter description
-contentType: 'Specification'
+description: In previous versions of the style specification, filters were defined using the deprecated syntax documented below.
+contentType: specification
 prependJs:
     - "import SectionH4 from '../../components/style-spec/section-h4';"
     - "import InnerSection from '../../components/style-spec/inner-section';"
