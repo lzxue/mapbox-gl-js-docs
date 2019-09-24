@@ -1,3 +1,12 @@
+/*---
+title: API Reference
+description: The Mapbox GL JS API documentation to render interactive maps from vector tiles and Mapbox styles.
+pathname: /mapbox-gl-js/api/
+contentType: API
+lanaguage: 
+    - JavaScript
+---*/
+
 import React from 'react';
 import PageShell from '../components/page_shell';
 import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
@@ -7,15 +16,6 @@ import GithubSlugger from 'github-slugger';
 import createFormatters from 'documentation/src/output/util/formatters';
 import LinkerStack from 'documentation/src/output/util/linker_stack';
 import ApiItem from '../components/api-item';
-
-const meta = {
-    title: 'API Reference',
-    description:
-        'The Mapbox GL JS API documentation to render interactive maps from vector tiles and Mapbox styles.',
-    pathname: '/mapbox-gl-js/api/',
-    contentType: 'API',
-    lanaguage: ['JavaScript']
-};
 
 const linkerStack = new LinkerStack({}).namespaceResolver(docs, namespace => {
     const slugger = new GithubSlugger();
@@ -70,7 +70,7 @@ export default class extends React.Component {
     render() {
         return (
             <PageShell
-                meta={meta}
+                {...this.props}
                 onUser={(_, token) => this.setState({ token })}
             >
                 <div className="prose">

@@ -1,3 +1,9 @@
+/*---
+title: Plugins
+description: Extend your Mapbox GL JS map with plugins.
+pathname: /mapbox-gl-js/plugins/
+---*/
+
 import React from 'react';
 import slug from 'slugg';
 import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
@@ -5,12 +11,6 @@ import md from '@mapbox/batfish/modules/md';
 import PageShell from '../components/page_shell';
 import entries from 'object.entries';
 import IconText from '@mapbox/mr-ui/icon-text';
-
-const meta = {
-    title: 'Plugins',
-    description: 'Extend your Mapbox GL JS map with plugins.',
-    pathname: '/mapbox-gl-js/plugins/'
-};
 
 export const plugins = {
     'User Interface Plugins': {
@@ -201,7 +201,7 @@ Is a [mock](https://en.wikipedia.org/wiki/Mock_object) of Mapbox GL JS.
 export default class extends React.Component {
     render() {
         return (
-            <PageShell meta={meta}>
+            <PageShell {...this.props}>
                 <div className="prose">
                     <h1 className="mt24 mt0-mm txt-fancy">Plugins</h1>
                 </div>
