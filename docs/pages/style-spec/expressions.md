@@ -4,6 +4,7 @@ id: expressions
 description: Expressions description
 contentType: 'Specification'
 prependJs:
+    - "import slug from 'slugg';"
     - "import SectionH3 from '../../components/style-spec/section-h3';"
     - "import SectionH4 from '../../components/style-spec/section-h4';"
     - "import InnerSection from '../../components/style-spec/inner-section';"
