@@ -13,9 +13,6 @@ const tabOrder = {
     },
     'style-spec': {
         title: 'Style Specification'
-    },
-    'style-spec-md': {
-        title: 'Style Specification md'
     }
 };
 

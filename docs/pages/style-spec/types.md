@@ -25,8 +25,7 @@ The `color` type represents a color in the [sRGB color space](https://en.wikiped
 }
 ```
 
-Especially of note is the support for hsl, which
-can be [easier to reason about than rgb()](http://mothereffinghsl.com/).
+Especially of note is the support for hsl, which can be [easier to reason about than rgb()](http://mothereffinghsl.com/).
 
 {{</SectionH3>}}
 
@@ -83,8 +82,7 @@ A number value, often an integer or floating point (decimal number). Written wit
 
 {{<SectionH3 id="types-array" title="Array">}}
 
-Arrays are comma-separated lists of one or more numbers in a specific order. For example, they're used in line dash arrays, in which the numbers specify intervals of line, break, and
-line again.
+Arrays are comma-separated lists of one or more numbers in a specific order. For example, they're used in line dash arrays, in which the numbers specify intervals of line, break, and line again.
 
 ```json
 {

@@ -68,8 +68,12 @@ A vector tile source. Tiles must be in [Mapbox Vector Tile format](https://docs.
 }
 ```
 
-<!-- This is generated from the specification. See https://github.com/mapbox/mapbox-gl-js/tree/master/src/style-spec -->
-
+<!--
+START GENERATED CONTENT:
+Content in this section is generated directly using the Mapbox Style
+Specification. To update any content displayed in this section, make edits to:
+https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/reference/v8.json.
+-->
 {{entries(ref.source_vector).map(
     ([name, prop], i) =>
         name !== '*' &&
@@ -82,6 +86,8 @@ A vector tile source. Tiles must be in [Mapbox Vector Tile format](https://docs.
             />
         )
 )}}
+<!-- END GENERATED CONTENT -->
+
 
 {{
 <SDKSupportTable
@@ -110,6 +116,12 @@ A raster tile source. For raster tiles hosted by Mapbox, the `"url"` value shoul
 }
 ```
 
+<!--
+START GENERATED CONTENT:
+Content in this section is generated directly using the Mapbox Style
+Specification. To update any content displayed in this section, make edits to:
+https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/reference/v8.json.
+-->
 {{entries(ref.source_raster).map(
     ([name, prop], i) =>
         name !== '*' &&
@@ -122,6 +134,7 @@ A raster tile source. For raster tiles hosted by Mapbox, the `"url"` value shoul
             />
         )
 )}}
+<!-- END GENERATED CONTENT -->
     
 {{
 <SDKSupportTable
@@ -149,8 +162,12 @@ A raster DEM source. Currently only supports [Mapbox Terrain RGB](https://blog.m
 }
 ```
 
-<!-- This is generated from the specification. See https://github.com/mapbox/mapbox-gl-js/tree/master/src/style-spec -->
-
+<!--
+START GENERATED CONTENT:
+Content in this section is generated directly using the Mapbox Style
+Specification. To update any content displayed in this section, make edits to:
+https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/reference/v8.json.
+-->
 {{entries(ref.source_raster_dem).map(
     ([name, prop], i) =>
         name !== '*' &&
@@ -163,6 +180,7 @@ A raster DEM source. Currently only supports [Mapbox Terrain RGB](https://blog.m
             />
         )
 )}}
+<!-- END GENERATED CONTENT -->
 
 {{
 <SDKSupportTable
@@ -205,9 +223,12 @@ This example of a GeoJSON source refers to an external GeoJSON document via its 
     "data": "./lines.geojson"
 }
 ```
-
-<!-- This is generated from the specification. See https://github.com/mapbox/mapbox-gl-js/tree/master/src/style-spec -->
-
+<!--
+START GENERATED CONTENT:
+Content in this section is generated directly using the Mapbox Style
+Specification. To update any content displayed in this section, make edits to:
+https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/reference/v8.json.
+-->
 {{entries(ref.source_geojson).map(
     ([name, prop], i) =>
         name !== '*' &&
@@ -220,6 +241,7 @@ This example of a GeoJSON source refers to an external GeoJSON document via its 
             />
         )
 )}}
+<!-- END GENERATED CONTENT -->
 
 {{
 <SDKSupportTable
@@ -266,7 +288,12 @@ The `"coordinates"` array contains `[longitude, latitude]` pairs for the image c
     ]
 }
 ```
-
+<!--
+START GENERATED CONTENT:
+Content in this section is generated directly using the Mapbox Style
+Specification. To update any content displayed in this section, make edits to:
+https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/reference/v8.json.
+-->
 {{entries(ref.source_image).map(
     ([name, prop], i) =>
         name !== '*' &&
@@ -279,6 +306,7 @@ The `"coordinates"` array contains `[longitude, latitude]` pairs for the image c
             />
         )
 )}}
+<!-- END GENERATED CONTENT -->
 
 {{
 <SDKSupportTable
@@ -317,6 +345,12 @@ The `"coordinates"` array contains `[longitude, latitude]` pairs for the video c
 }
 ```
 
+<!--
+START GENERATED CONTENT:
+Content in this section is generated directly using the Mapbox Style
+Specification. To update any content displayed in this section, make edits to:
+https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/reference/v8.json.
+-->
 {{entries(ref.source_video).map(
     ([name, prop], i) =>
         name !== '*' &&
@@ -329,6 +363,7 @@ The `"coordinates"` array contains `[longitude, latitude]` pairs for the video c
             />
         )
 )}}
+<!-- END GENERATED CONTENT -->
 
 {{
 <SDKSupportTable
