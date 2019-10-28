@@ -31,7 +31,8 @@ document.getElementById('fly').addEventListener('click', function () {
     map.flyTo({
         center: [
             -74.50 + (Math.random() - 0.5) * 10,
-            40 + (Math.random() - 0.5) * 10]
+            40 + (Math.random() - 0.5) * 10],
+        essential: true // this animation is considered essential with respect to prefers-reduced-motion
     });
 });
 </script>
