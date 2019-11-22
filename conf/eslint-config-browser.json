@@ -52,7 +52,6 @@
   "settings": {
     "react": {
       "version": "detect"
-    },
-    "polyfills": ["Uint8Array"]
+    }
   }
 }
