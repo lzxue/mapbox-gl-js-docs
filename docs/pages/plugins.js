@@ -1,7 +1,7 @@
 import React from 'react';
 import slug from 'slugg';
 import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
-import md from '@mapbox/batfish/modules/md';
+import md from '@mapbox/batfish/modules/md'; // eslint-disable-line
 import PageShell from '../components/page_shell';
 import entries from 'object.entries';
 import IconText from '@mapbox/mr-ui/icon-text';
@@ -198,7 +198,7 @@ Is a [mock](https://en.wikipedia.org/wiki/Mock_object) of Mapbox GL JS.
     }
 };
 
-export default class extends React.Component {
+export default class Plugins extends React.Component {
     render() {
         return (
             <PageShell meta={meta}>
@@ -253,9 +253,7 @@ export default class extends React.Component {
                                                     <a
                                                         className="link link--blue"
                                                         href={prefixUrl(
-                                                            `/example/${
-                                                                plugin.example
-                                                            }`
+                                                            `/example/${plugin.example}`
                                                         )}
                                                     >
                                                         <IconText iconBefore="code">

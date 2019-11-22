@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PageShell from '../components/page_shell';
 import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
 import { version } from '../../mapbox-gl-js/package.json';
@@ -39,7 +40,7 @@ function md(ast, inline) {
         };
     }
     return (
-        <span dangerouslySetInnerHTML={{ __html: formatters.markdown(ast) }} />
+        <span dangerouslySetInnerHTML={{ __html: formatters.markdown(ast) }} /> // eslint-disable-line
     );
 }
 
@@ -63,7 +64,7 @@ class Note extends React.Component {
     }
 }
 
-export default class extends React.Component {
+export default class Api extends React.Component {
     constructor(props) {
         super(props);
         this.state = { token: '<your access token here>' };
@@ -149,3 +150,13 @@ export default class extends React.Component {
         );
     }
 }
+
+Note.propTypes = {
+    namespace: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.object
+};
+
+Api.propTypes = {
+    location: PropTypes.object
+};

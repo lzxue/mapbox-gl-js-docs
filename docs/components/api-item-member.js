@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import GithubSlugger from 'github-slugger';
 import createFormatters from 'documentation/src/output/util/formatters';
 import LinkerStack from 'documentation/src/output/util/linker_stack';
@@ -102,5 +103,12 @@ class ApiItemMember extends React.Component {
         window.removeEventListener('hashchange', this.hashChange);
     }
 }
+
+ApiItemMember.propTypes = {
+    namespace: PropTypes.string,
+    name: PropTypes.string,
+    kind: PropTypes.string,
+    location: PropTypes.object
+};
 
 export default ApiItemMember;

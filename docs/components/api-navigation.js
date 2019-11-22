@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import docs from '../components/api.json';
 import Icon from '@mapbox/mr-ui/icon';
 
@@ -105,18 +106,26 @@ class ApiNavigation extends React.Component {
                     className="list-reset mb3 py1-ul"
                     data-swiftype-index="false"
                 >
-                    {docs.map(
-                        (doc, i) =>
-                            doc.kind === 'note' ? (
-                                <TableOfContentsNote key={i} {...doc} />
-                            ) : (
-                                <TableOfContentsItem key={i} {...doc} />
-                            )
+                    {docs.map((doc, i) =>
+                        doc.kind === 'note' ? (
+                            <TableOfContentsNote key={i} {...doc} />
+                        ) : (
+                            <TableOfContentsItem key={i} {...doc} />
+                        )
                     )}
                 </ul>
             </div>
         );
     }
 }
+
+TableOfContentsItem.propTypes = {
+    members: PropTypes.object,
+    name: PropTypes.string
+};
+
+TableOfContentsNote.propTypes = {
+    name: PropTypes.string
+};
 
 export default ApiNavigation;

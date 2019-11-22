@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import urls from './urls';
 import md from './md';
 import Prism from 'prismjs';
@@ -9,6 +10,7 @@ import Note from '@mapbox/dr-ui/note';
 import WarningImage from '@mapbox/dr-ui/warning-image';
 
 const highlightTheme = require('raw-loader!@mapbox/dr-ui/css/prism.css');
+
 const viewport = `<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />`;
 const css = `body { margin: 0; padding: 0; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; };`;
@@ -158,3 +160,14 @@ ${html}
         });
     }
 }
+
+ExampleCode.propTypes = {
+    html: PropTypes.string,
+    frontMatter: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string
+    }),
+    location: PropTypes.shape({
+        pathname: PropTypes.string
+    })
+};

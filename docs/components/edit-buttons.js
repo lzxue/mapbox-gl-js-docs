@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import urls from './urls';
 import prettier from 'prettier/standalone';
 import parserCss from 'prettier/parser-postcss';
@@ -135,3 +136,15 @@ class EditButtons extends React.Component {
 }
 
 export default EditButtons;
+
+EditButtons.propTypes = {
+    css: PropTypes.string,
+    code: PropTypes.string,
+    frontMatter: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string
+    }),
+    rawHtml: PropTypes.string,
+    head: PropTypes.string,
+    url: PropTypes.string
+};

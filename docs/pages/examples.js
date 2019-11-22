@@ -12,9 +12,9 @@ import CardContainer from '@mapbox/dr-ui/card-container';
 import Card from '@mapbox/dr-ui/card';
 import PageShell from '../components/page_shell';
 import tags from '../data/tags.json';
-import examples from '@mapbox/batfish/data/examples';
+import examples from '@mapbox/batfish/data/examples'; // eslint-disable-line
 import AppropriateImage from '../components/appropriate-image';
-import imageConfig from '../img/dist/image.config.json'; // eslint-disable-line
+import imageConfig from '../img/dist/image.config.json';
 
 const meta = {
     title: 'Examples',
