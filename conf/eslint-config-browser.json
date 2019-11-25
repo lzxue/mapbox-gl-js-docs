@@ -1,3 +1,10 @@
 {
-  "extends": ["./eslint-config-base.json", "@mapbox/eslint-config-docs"]
+  "extends": ["./eslint-config-base.json", "@mapbox/eslint-config-docs"],
+  "rules": {
+    "es/no-for-of-loops": "off",
+    "es/no-typed-arrays": "off",
+
+    "xss/no-mixed-html": "off",
+    "es/no-promise": "off"
+  }
 }
