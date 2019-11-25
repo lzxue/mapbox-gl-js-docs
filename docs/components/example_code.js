@@ -19,7 +19,6 @@ export default class ExampleCode extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            filter: '',
             token: undefined,
             unsupported: false
         };
@@ -152,10 +151,7 @@ ${html}
 
         MapboxPageShell.afterUserCheck(() => {
             this.setState({
-                token: MapboxPageShell.getUserPublicAccessToken(),
-                userName: MapboxPageShell.getUser()
-                    ? MapboxPageShell.getUser().id
-                    : undefined
+                token: MapboxPageShell.getUserPublicAccessToken()
             });
         });
     }

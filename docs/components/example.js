@@ -10,7 +10,6 @@ export default function(html) {
         constructor(props) {
             super(props);
             this.state = {
-                filter: '',
                 userName: undefined
             };
         }

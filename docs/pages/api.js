@@ -65,17 +65,9 @@ class Note extends React.Component {
 }
 
 export default class Api extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { token: '<your access token here>' };
-    }
-
     render() {
         return (
-            <PageShell
-                meta={meta}
-                onUser={(_, token) => this.setState({ token })}
-            >
+            <PageShell meta={meta}>
                 <div className="prose">
                     <h1 className="mt24 mt0-mm txt-fancy">Mapbox GL JS</h1>
                     <div className="py6 color-gray txt-s mt-neg24 mb12">
