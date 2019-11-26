@@ -42,6 +42,7 @@ ${viewport}
 </head>
 <body>
 ${html.replace(
+    // eslint-disable-line
     '<script>',
     `<script>\nmapboxgl.accessToken = '${this.state.token ||
         '<your access token here>'}';`
@@ -114,7 +115,7 @@ ${html}
                 <div className="bg-white" data-swiftype-index="false">
                     <div id="code" className="relative">
                         <EditButtons
-                            code={this.displayHTML(html)}
+                            code={this.displayHTML(html)} // eslint-disable-line
                             css={css}
                             frontMatter={this.props.frontMatter}
                             rawHtml={html}
@@ -122,9 +123,9 @@ ${html}
                             url={`https://docs.mapbox.com${this.props.location.pathname}`}
                         />
                         <CodeSnippet
-                            code={this.displayHTML(html)}
+                            code={this.displayHTML(html)} // eslint-disable-line
                             highlightedCode={Prism.highlight(
-                                this.displayHTML(html),
+                                this.displayHTML(html), // eslint-disable-line
                                 Prism.languages['markup']
                             )}
                             highlightThemeCss={highlightTheme}
@@ -146,7 +147,7 @@ ${html}
         if (!this.iframe) return;
         const doc = this.iframe.contentWindow.document;
         doc.open();
-        doc.write(this.renderHTML(this.props.html));
+        doc.write(this.renderHTML(this.props.html)); // eslint-disable-line
         doc.close();
 
         MapboxPageShell.afterUserCheck(() => {

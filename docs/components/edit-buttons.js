@@ -31,7 +31,7 @@ class EditButtons extends React.Component {
         description += `\n\nSee the example: [${url}](${url})`;
         // extract inline css from html, append to css var, then remove from html output
         if (moreCss) {
-            css += moreCss[0].replace('</style>', '').replace('<style>', '');
+            css += moreCss[0].replace('</style>', '').replace('<style>', ''); // eslint-disable-line
             html = `${html.replace(cssRegex, '')}`;
         }
         // extract inline scripts from html, add them as resources, then remove from html output
