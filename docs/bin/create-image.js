@@ -52,7 +52,7 @@ ${snippet}
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     // set html for page and then wait until mapbox-gl-js loads
-    await page.setContent(html, { waitUntil: 'networkidle2' });
+    await page.setContent(html, { waitUntil: 'networkidle2' }); // eslint-disable-line
     // set viewport and double deviceScaleFactor to get a closer shot of the map
     await page.setViewport({
         width: 600,

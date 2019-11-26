@@ -1,8 +1,6 @@
 {
   "extends": ["./eslint-config-base.json", "@mapbox/eslint-config-docs"],
   "rules": {
-    "es/no-for-of-loops": "off",
-
-    "es/no-promise": "off"
+    "es/no-for-of-loops": "off"
   }
 }
