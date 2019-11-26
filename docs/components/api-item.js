@@ -49,12 +49,16 @@ class ApiItem extends React.Component {
         }
         return (
             <span
-                dangerouslySetInnerHTML={{ __html: formatters.markdown(ast) }}
+                dangerouslySetInnerHTML={{
+                    __html: `${formatters.markdown(ast)}`
+                }}
             />
         );
     };
     formatType = type => (
-        <span dangerouslySetInnerHTML={{ __html: formatters.type(type) }} />
+        <span
+            dangerouslySetInnerHTML={{ __html: `${formatters.type(type)}` }}
+        />
     );
 
     render() {
@@ -115,7 +119,7 @@ class ApiItem extends React.Component {
                             <span
                                 key={i}
                                 dangerouslySetInnerHTML={{
-                                    __html: formatters.autolink(tag.name)
+                                    __html: `${formatters.autolink(tag.name)}`
                                 }}
                             />
                         ))}

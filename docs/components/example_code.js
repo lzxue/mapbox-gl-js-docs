@@ -158,7 +158,7 @@ ${html}
 }
 
 ExampleCode.propTypes = {
-    html: PropTypes.string,
+    html: PropTypes.string, // eslint-disable-line
     frontMatter: PropTypes.shape({
         title: PropTypes.string,
         description: PropTypes.string

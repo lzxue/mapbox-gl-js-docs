@@ -1,4 +1,8 @@
 {
+  "rules": {
+    "xss/no-mixed-html": "off",
+    "es/no-typed-arrays": "off"
+  },
   "overrides": [{
     "files": ["*.html"],
     "parser": "espree",

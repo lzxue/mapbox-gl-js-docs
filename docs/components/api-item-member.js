@@ -57,7 +57,10 @@ class ApiItemMember extends React.Component {
                             <span
                                 className="color-gray txt-code mr12"
                                 dangerouslySetInnerHTML={{
-                                    __html: formatters.parameters(member, true)
+                                    __html: `${formatters.parameters(
+                                        member,
+                                        true
+                                    )}`
                                 }}
                             />
                         )}
