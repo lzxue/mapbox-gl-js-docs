@@ -15,7 +15,7 @@
     "@mapbox/batfish": "1.9.8",
     "@mapbox/copyeditor": "^0.7.0",
     "@mapbox/dr-ui": "0.21.2",
-    "@mapbox/eslint-config-docs": "^0.1.1",
+    "@mapbox/eslint-config-docs": "^0.2.1",
     "@mapbox/eslint-config-mapbox": "^2.0.1",
     "@mapbox/mapbox-gl-supported": "^1.4.0",
     "@mapbox/mbx-assembly": "^0.28.2",

@@ -1094,10 +1094,10 @@
     rehype-sectionize-headings "^1.0.0-rc.1"
     uuid "^3.3.2"
 
-"@mapbox/eslint-config-docs@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@mapbox/eslint-config-docs/-/eslint-config-docs-0.1.1.tgz#f61ebcff16cf31f74ad12871a28abe7b9dba7ddc"
-  integrity sha512-22hUKYKuV89yr3HI5A9MC5pzYabrSG/5j5uXUpy4QY1tfQBDzWb0tLPXVD5B+mQnjnKLaEXhIGfDgn90Pp8ePQ==
+"@mapbox/eslint-config-docs@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@mapbox/eslint-config-docs/-/eslint-config-docs-0.2.1.tgz#6e13ea981dcc79b0c098bdb4bcbce157a878fb8c"
+  integrity sha512-JXXkHp2yhht64YkMEqb1xNWvdVC7JMcfVdvgNydrMB5TNai4TJ25hrJ3sZECvsH4lKFN4a7jo2YRCAh6Rx1QMg==
   dependencies:
     "@mapbox/eslint-config-mapbox" "^2.0.1"
     babel-eslint "^10.0.3"
