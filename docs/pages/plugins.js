@@ -84,6 +84,11 @@ export const plugins = {
             website: 'https://github.com/uber/deck.gl',
             description:
                 'Adds advanced WebGL visualization layers to Mapbox GL JS.'
+        },
+        'L7': {
+            website: 'https://github.com/antvis/L7',
+            description:
+                'Adds Large-scale WebGL-powered Geospatial Data Visualization framework to Mapbox GL JS'
         }
     },
     'Framework Integrations': {
